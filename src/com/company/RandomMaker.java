@@ -39,6 +39,7 @@ public class RandomMaker {
 
     //억지 스트림과 람다를 써 봄
     public List<Integer> getRandomThree(){
+        System.out.println("random maker on!");
         List<Integer> result = Stream.iterate(new Random().nextInt(this.seed), x ->{
             return new Random().nextInt(this.seed);
         }).limit(3).collect(Collectors.toList());

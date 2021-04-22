@@ -1,9 +1,10 @@
 package com.company;
 
+import java.io.IOException;
+
 public class Main {
 
-    public static void main(String[] args) {
-        RandomMaker randomMaker = new RandomMaker(99999);
-        System.out.println(randomMaker.getRandomThree().toString());
+    public static void main(String[] args) throws IOException {
+        JavaJjangServer server = new JavaJjangServer();
     }
 }
